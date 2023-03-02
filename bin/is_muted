@@ -1,0 +1,11 @@
+#!/bin/bash
+
+output=$(pacmd list-sources | grep -e index -e name: -e muted -e device.description | grep -e yes -A 1 | tail -1)
+yes="s"
+no=""
+if [ "${output: -1}" = "$no"  ];
+then
+    echo ""
+else
+    echo ""
+fi

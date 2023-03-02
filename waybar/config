@@ -1,0 +1,78 @@
+{
+    "layer": "top",
+    // "position": "bottom",
+    "height": 31,
+    // "width": 1280,
+    "spacing": 0,
+    "margin-top": 10,
+    "margin-left": 10,
+    "margin-right": 10,
+    // Order of the modules
+    "modules-left": ["custom/spacerleft", "wlr/workspaces", "custom/spacerright"],
+    "modules-center": ["custom/spacerleft", "clock", "custom/spacerright",],
+    "modules-right": ["custom/spacerleft", "pulseaudio", "custom/spacercenter", "cpu", "custom/spacercenter", "memory", "custom/spacercenter", "battery", "custom/spacerright"],
+    // Modules configuration
+    "custom/spacerleft": {
+        "format": "   "
+    },
+    "custom/spacercenter": {
+        "format": "   "
+    },
+    "custom/spacerright": {
+        "format": "   "
+    },
+    "sway/workspaces": {
+    	"format": "{name}",
+    	"sort-by-number": true
+    },
+    "battery": {
+//        "format-charging": " {capacity}% ",
+//        "format": " {capacity}% "
+        "format-charging": " {capacity}% ",
+        "format": " {capacity}% "
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "{:%Y %B}\n<tt>{calendar}</tt>",
+        "format": "{:%d-%m-%y    %H:%M}",
+    },
+    "cpu": {
+//        "format": "  {usage}%",
+        "format": "  {usage}%",
+        "tooltip": true,
+        "interval": 1,
+    },
+    "memory": {
+//        "format": "   {used:0.2f} Go",
+        "format": "   {used:0.2f} Go",
+    },
+    "pulseaudio": {
+//        "format": "{icon} {volume}%",
+        "format": " {volume}%",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": "x",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/logo": {
+		"format": "",
+		"tooltip": false
+	},
+    "custom/sep": {
+		"format": "|",
+		"tooltip": false
+	},
+}
