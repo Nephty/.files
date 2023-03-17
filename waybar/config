@@ -9,8 +9,8 @@
     "margin-right": 10,
     // Order of the modules
     "modules-left": ["custom/spacerleft", "wlr/workspaces", "custom/spacerright"],
-    "modules-center": ["custom/spacerleft", "clock", "custom/spacerright",],
-    "modules-right": ["custom/spacerleft", "pulseaudio", "custom/spacercenter", "cpu", "custom/spacercenter", "memory", "custom/spacercenter", "battery", "custom/spacerright"],
+    "modules-center": ["custom/spacerleft", "clock", "custom/spacerright"],
+    "modules-right": ["custom/spacerleft", "custom/ping", "custom/spacercenter", "pulseaudio", "custom/spacercenter", "custom/cpu", "custom/spacercenter", "memory", "custom/spacercenter", "battery", "custom/spacerright"],
     // Modules configuration
     "custom/spacerleft": {
         "format": "   "
@@ -40,7 +40,7 @@
     },
     "cpu": {
 //        "format": "  {usage}%",
-        "format": "  {usage}%",
+        "format": "  {usage:02}%",
         "tooltip": true,
         "interval": 1,
     },
@@ -75,4 +75,16 @@
 		"format": "|",
 		"tooltip": false
 	},
+	"custom/ping": {
+        "format": " {}  ",
+        "return-type": "string",
+        "exec": "/home/Nephty/bin/pong.sh",
+        "interval": 2
+    },
+    "custom/cpu": {
+        "format": " {}  ",
+        "return-type": "string",
+        "exec": "/home/Nephty/bin/cpu.sh",
+        "interval": 2
+    }
 }

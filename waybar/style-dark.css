@@ -148,6 +148,22 @@ button:hover {
     border-color: #555555;
 }
 
+#custom-ping {
+    background-color: rgba(45, 37, 45, 0.5);
+    border-top-style: double;
+    border-bottom-style: double;
+    border-width: 3px;
+    border-color: #555555;
+}
+
+#custom-cpu {
+    background-color: rgba(45, 37, 45, 0.5);
+    border-top-style: double;
+    border-bottom-style: double;
+    border-width: 3px;
+    border-color: #555555;
+}
+
 #battery {
     background-color: rgba(45, 37, 45, 0.5);
     color: #cfcfcf;

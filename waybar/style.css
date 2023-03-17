@@ -143,6 +143,20 @@ button:hover {
     border-width: 3px;
 }
 
+#custom-ping {
+    background-color: rgba(45, 37, 45, 0.5);
+    border-top-style: double;
+    border-bottom-style: double;
+    border-width: 3px;
+}
+
+#custom-cpu {
+    background-color: rgba(45, 37, 45, 0.5);
+    border-top-style: double;
+    border-bottom-style: double;
+    border-width: 3px;
+}
+
 #battery {
     background-color: rgba(45, 37, 45, 0.5);
     color: #ffffff;
