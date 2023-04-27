@@ -5,7 +5,7 @@ STYLE="$HOME/.config/wofi/style.css"
 
 
 if [[ -z "$(pidof wofi)" ]];then
-  wofi -c "$CFG" -s "$STYLE" --show drun
+  wofi -c "$CFG" -s "$STYLE" -b -i --show drun
 else
   killall wofi
 fi
